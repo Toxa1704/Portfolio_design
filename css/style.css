@@ -22,6 +22,14 @@ border-radius: 50%;
 background: #66FCF1;
 
 }
+.hero-signal-title{
+    margin-top: 225px;
+  width: 505px;
+height: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 .hero-signal{
   width: 159px;
   height: 28px;
@@ -45,8 +53,7 @@ flex-wrap: nowrap;
 justify-content: space-between;
 }
 .hero-title {
-width: 505px;
-height: 168px;
+
 font-family: 'Fira Sans';
 font-style: normal;
 font-weight: 500;
@@ -58,24 +65,37 @@ color: #FFFFFF;
   font-style: normal;
 }
 .hero-image{
+position: absolute;
 width: 721px;
 height: 631px;
+left: calc(50% - 721px/2 + 10px);
+top: 100px;
 }
 .hero-subtitle{
-/* Frame 13 */
-
-/* Auto layout */
+    margin-top: 335px;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
 align-items: flex-start;
 padding: 0px;
 gap: 25px;
-
 width: 331px;
-height: 74px;
 font-weight: 400;
 font-size: 16px;
 line-height: 130%;
 color: #FFFFFF;
+}
+.hero-btn{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 30px 4px 4px;
+gap: 18px;
+width: 169px;
+height: 50px;
+background: #5A16E1;
+border-radius: 24px;
 }
