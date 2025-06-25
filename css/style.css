@@ -6,13 +6,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none; 
+  color: inherit;         
+}
 body{
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
   margin: auto;
   max-width: 1480px;
-  /* height: 2000px; */
   font-family: 'Fira Sans';
   font-style: normal;
   color: #FFFFFF;
@@ -56,8 +59,6 @@ flex-wrap: nowrap;
 justify-content: space-between;
 }
 .hero-title {
-font-family: 'Fira Sans';
-font-style: normal;
 font-weight: 500;
 font-size: 48px;
 line-height: 58px;
@@ -103,7 +104,34 @@ width: 169px;
 height: 50px;
 background: #5A16E1;
 border-radius: 24px;
+transition: all 500ms ease; 
 }
+
+.hero-btn{
+  transform-style: preserve-3d;
+}
+
+.hero-btn:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+border-radius: 24px;
+	top: -100%;
+	left: 0;
+	width: 100%;
+  height: 90%;
+	position: absolute;
+	background: #5A16E1;
+	content: 'Перейти';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+
+.hero-btn:hover{
+  transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+
 .myskill{
   display: flex;
   align-items: center;
@@ -165,7 +193,7 @@ width: 231px;
 height: 294px;
 background: url(/image/02\ 1.png);
 }
-.portfolio{
+#portfolio{
   margin-top: 87px;
 }
 
