@@ -32,7 +32,6 @@ background: #66FCF1;
 .hero-signal-title{
   margin-top: 225px;
   width: 505px;
-  height: 168px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -52,7 +51,7 @@ background: #616161;
 border-radius: 16px;
 }
 
-.her-block-content{
+.hero-block-content{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -469,13 +468,13 @@ border-radius: 50%;
 @media screen and (max-width: 1024px) and (min-width: 768px){
   .hero-image{
     /* display: none; */
-width: 306px;
-height: 260px;
-left: calc(50% - 300px/2 + 15px);
+width: 467px;
+height: 410px;
+right: 0;
 top: 20px;
   }
   .hero-signal-title{
-    max-width: 310px;
+    max-width: 400px;
     margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -489,8 +488,9 @@ line-height: 46px;
   font-size: 48px;
 }
 .hero-subtitle{
-  width: 200px;
-gap: 12px;
+  margin-top: 16px;
+  width: 400px;
+gap: 16px;
 }
 
 .hero-subtitle-text{
@@ -589,8 +589,10 @@ line-height: 18px;
   .hero-image{
     display: none;
   }
-  .her-block-content{
+  .hero-block-content{
+    padding-left: 0;
   flex-direction: column;
+  gap: 12px;
   }
 .hero-signal-title{
   margin-top: 20px;
@@ -605,7 +607,6 @@ line-height: 18px;
   font-size:42px;
   }
 .hero-subtitle{
-  margin-top: 30px;
   gap: 12px;
   }
 .hero-subtitle-text{
@@ -643,7 +644,14 @@ line-height: 18px;
 .about-paragraph-1 img, .about-paragraph-2 img{
   height: 18px;
   }
+  .portfolio-title{
+
+font-size: 32px;
+line-height: 40px;
+
+}
 .portfolio-cards{
+  margin-top: 20px;
   width: 100%;
   height: initial;
   display: flex;
