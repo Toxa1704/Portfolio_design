@@ -30,7 +30,7 @@ background: #66FCF1;
 
 }
 .hero-signal-title{
-  margin-top: 225px;
+  margin-top: 165px;
   width: 505px;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,6 @@ line-height: 58px;
 position: absolute;
 width: 721px;
 height: 631px;
-/* left: calc(50% - 721px/2 + 15px); */
 right: 0;
 top: 100px;
 }
