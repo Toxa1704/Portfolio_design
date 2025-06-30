@@ -584,7 +584,7 @@ line-height: 18px;
   height: 30px;
 }
 }
-@media screen and (max-width: 767px) and (min-width: 370px){
+@media screen and (max-width: 767px) and (min-width: 350px){
   .hero-image{
     display: none;
   }
