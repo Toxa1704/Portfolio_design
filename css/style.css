@@ -30,9 +30,9 @@ background: #66FCF1;
 
 }
 .hero-signal-title{
-    margin-top: 225px;
+  margin-top: 225px;
   width: 505px;
-height: 168px;
+  height: 168px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -64,14 +64,13 @@ font-weight: 500;
 font-size: 48px;
 line-height: 58px;
 color: #FFFFFF;
-  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 .ui{
   font-size: 64px;
 }
 .hero-image{
+  z-index: -1;
 position: absolute;
 width: 721px;
 height: 631px;
@@ -90,9 +89,6 @@ align-items: flex-start;
 padding: 0px;
 gap: 25px;
 width: 331px;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
 color: #FFFFFF;
 }
 
@@ -171,6 +167,7 @@ border-radius: 24px;
 	transform: rotateX(-90deg) translateY(100%);
 }
 .line{
+  padding-left: 60px;
     margin: auto;
    max-width: 100em;
     overflow: hidden;    
@@ -180,18 +177,23 @@ border-radius: 24px;
   align-items: center;
   gap: 60px;
   margin-top: 275px;
-  animation: run 25s linear infinite;
+  animation: run 15s linear infinite;
 }
 @keyframes run {
    0% {
       transform: translatex(0);
    }
    100% {
-      transform: translatex(-78%);
+      transform: translatex(-135%);
    }
 }
 
 .skill{
+font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 45px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -450,3 +452,245 @@ border-radius: 50%;
   top: 0;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .hero-image{
+    /* display: none; */
+width: 306px;
+height: 260px;
+left: calc(50% - 300px/2 + 15px);
+top: 20px;
+  }
+  .hero-signal-title{
+    max-width: 310px;
+    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-title {
+font-size: 32px;
+line-height: 46px;
+}
+.ui{
+  font-size: 48px;
+}
+.hero-subtitle{
+  width: 200px;
+  margin-top: 50px;
+gap: 12px;
+}
+
+.hero-subtitle-text{
+font-weight: 400;
+font-size: 14px;
+}
+
+.myskill{
+  padding-left: 30px;
+  gap: 30px;
+  margin-top: 70px;
+}
+.skill{
+  font-size: 16px;
+  padding: 0px 12px;
+}
+.hero-btn,.btn-text{
+  width: initial;
+height: initial;
+padding: 4px 10px 4px 4px;
+gap: 10px; 
+}
+
+.hero-subtitle svg{
+  width: 30px;
+  height: 30px;
+}
+.aboutme{
+  margin-top: 50px;
+}
+.about-paragraph-1,.about-paragraph-2{
+font-size: 28px;
+line-height: 40px;
+}
+.about-paragraph-1 img, .about-paragraph-2 img{
+height: 20px;
+}
+.accord:hover{
+  width: 80%;
+    .card .content-project{
+    width: initial;
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.card{
+  padding: 30px 10px;
+}
+.gym{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/GYM24.png);
+  background-size:cover;
+  background-position: 50%;
+}
+.post{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/Post.png);
+background-size:cover;
+background-position: 50%;
+}
+.nice{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/nice.png);
+background-size: cover;
+background-position: 50%;
+}
+.mobileapp{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/mobileapp.png);
+background-size: cover;
+background-position: 50%;
+}
+.gamesite{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/gamesite.png);
+background-size: cover;
+background-position: 50%;
+}
+.dijital{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/dijital.png);
+background-size: cover;
+background-position: 50%;
+}
+.nameskill{
+font-size: 12px;
+padding: 4px;
+}
+.name-project{
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+}
+.link svg{
+  width: 30px;
+  height: 30px;
+}
+}
+@media screen and (max-width: 767px) and (min-width: 370px){
+  .hero-image{
+    display: none;
+  }
+  .her-block-content{
+  flex-direction: column;
+}
+.hero-signal-title{
+  margin-top: 20px;
+  width: initial;
+  height: initial;
+}
+.hero-title{
+  font-size: 32px;
+  line-height: 48px;
+}
+.ui{
+  font-size:42px;
+}
+.hero-subtitle{
+  margin-top: 30px;
+  gap: 12px;
+}
+.hero-subtitle-text{
+  font-weight: 200;
+}
+.hero-btn svg{
+  width: 24px;
+  height: 24px;
+}
+.hero-btn{
+width: initial;
+height: initial;
+padding: 4px 16px 4px 4px;
+gap: 8px;
+}
+.line{
+  padding-left: 10px;
+}
+.myskill{
+  margin-top: 50px;
+  gap: 12px;
+}
+.skill{
+  font-size: 16px;
+  padding: 0 12px;
+  font-weight: 300;
+}
+.aboutme{
+  margin-top: 50px;
+}
+.about-paragraph-1,.about-paragraph-2{
+font-size: 24px;
+line-height: 30px;
+}
+.about-paragraph-1 img, .about-paragraph-2 img{
+height: 18px;
+}
+.portfolio-cards{
+  width: 100%;
+  height: initial;
+  display: flex;
+  flex-direction: column;
+}
+.accord{
+  width: 100%;
+  height: 400px;
+      .card .content-project{
+    width: initial;
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card{
+  /* position: relative; */
+  background: none;
+}
+/* .accord:hover{
+  width: 100%;
+    .card .content-project{
+    width: initial;
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+} */
+.card{
+  padding: 30px 10px;
+}
+.gym{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/GYM24.png);
+  background-size:cover;
+  background-position: 50%;
+}
+.post{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/Post.png);
+background-size:cover;
+background-position: 50%;
+}
+.nice{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/nice.png);
+background-size: cover;
+background-position: 50%;
+}
+.mobileapp{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/mobileapp.png);
+background-size: cover;
+background-position: 50%;
+}
+.gamesite{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/gamesite.png);
+background-size: cover;
+background-position: 50%;
+}
+.dijital{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6%, rgba(0, 0, 0, 0.7) 70%), url(/image/dijital.png);
+background-size: cover;
+background-position: 50%;
+}
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Калькулятор px → vw</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculator {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .calculator h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .calculator label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .calculator input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-top: 0.25rem;
+      box-sizing: border-box;
+    }
+
+    .result {
+      margin-top: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Калькулятор px → vw</h2>
+    
+    <label for="px">Пікселі (px):</label>
+    <input type="number" id="px" placeholder="Наприклад, 300" />
+
+    <label for="viewport">Ширина вікна (px):</label>
+    <input type="number" id="viewport" placeholder="Наприклад, 1920" value="1920"/>
+
+    <div class="result" id="vwResult">Результат: —</div>
+  </div>
+
+  <script>
+    const pxInput = document.getElementById('px');
+    const vpInput = document.getElementById('viewport');
+    const result = document.getElementById('vwResult');
+
+    function calculateVW() {
+      const px = parseFloat(pxInput.value);
+      const vp = parseFloat(vpInput.value);
+
+      if (!isNaN(px) && !isNaN(vp) && vp > 0) {
+        const vw = (px / vp) * 100;
+        result.textContent = `Результат: ${vw.toFixed(3)}vw`;
+      } else {
+        result.textContent = 'Результат: —';
+      }
+    }
+
+    pxInput.addEventListener('input', calculateVW);
+    vpInput.addEventListener('input', calculateVW);
+  </script>
+</body>
+</html>
